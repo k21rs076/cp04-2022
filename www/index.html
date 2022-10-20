@@ -203,6 +203,7 @@
                 var rest = period - time;
                 $("#time").html("経過時間： " + time);
                 $("#remain").html("残り時間： " + rest);
+                $("#time2").html("経過時間： " + time);
                 analog(rest);
                 if (rest <= 0) {
                     active = false;
@@ -221,6 +222,7 @@
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
+    <div id="time2">Time2</div>
     <button id="btnA">Start</button>
     <button id="btnB">Stop</button>
     <button id="btnC">Set</button>
