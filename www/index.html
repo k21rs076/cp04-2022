@@ -154,6 +154,7 @@
         var active = false;
         var startTime = 0;
         var period = 0;
+        var san =180;
 
         // ボタンの初期設定
         function init() {
@@ -194,6 +195,7 @@
             period = 60 * parseInt($("#minute").val()) + parseInt($("#second").val());
             $("#time").html("経過時間： 0");
             $("#remain").html("残り時間： " + period);
+            $("#time2").html("3分タイマー： " + 180);
         }
 
         // 繰り返し実行する処理
@@ -203,7 +205,7 @@
                 var rest = period - time;
                 $("#time").html("経過時間： " + time);
                 $("#remain").html("残り時間： " + rest);
-                $("#time2").html("経過時間： " + time);
+                $("#time2").html("3分タイマー： " + time);
                 analog(rest);
                 if (rest <= 0) {
                     active = false;
@@ -222,7 +224,7 @@
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
-    <div id="time2">Time2</div>
+    <div id="time2">3分</div>
     <button id="btnA">Start</button>
     <button id="btnB">Stop</button>
     <button id="btnC">Set</button>
