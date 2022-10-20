@@ -84,7 +84,7 @@
     input[type=number] {text-align: right;}
 
     body {
-        background-color: magenta;
+        background-color: rgb(255, 115, 0);
     }
 
     button{
