@@ -203,9 +203,10 @@
             if (active) {
                 var time = parseInt((new Date() - startTime) / 1000);
                 var rest = period - time;
+                var nokori= san - time;
                 $("#time").html("経過時間： " + time);
                 $("#remain").html("残り時間： " + rest);
-                $("#time2").html("3分タイマー： " + time);
+                $("#time2").html("3分タイマー： " + nokori);
                 analog(rest);
                 if (rest <= 0) {
                     active = false;
